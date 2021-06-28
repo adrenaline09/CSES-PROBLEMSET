@@ -1,0 +1,140 @@
+Alway try to include
+//////////////////
+ #include <bits/stdc++.h>
+//////////////////
+
+ Insert this in main function to speed up input & output
+//////////////////
+  ios_base::sync_with_stdio(false);
+/////////////////
+
+###################  standard templet 
+  #include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+    ios_base::sync_with_stdio(false);
+    cin.tie(NULL);
+    return 0;
+}
+####################
+Declare array like this
+int arr[] = {12, 3, 4, 15};
+####################
+
+
+
+####################
+Inbulit(under STL library) accumulate function to find the sum of array
+int arr[] = {12, 3, 4, 15};
+accumulate(arr, arr + n, 0);
+#####################
+
+#####################
+If we have to return two value from the function
+struct Pair
+{
+    int min;
+    int max;
+}
+
+We use struct pair method
+https://www.geeksforgeeks.org/maximum-and-minimum-in-an-array
+#####################
+
+#####################
+Use of dictionary 
+
+#include<map>
+#####################
+
+####################
+Find whether the element exist in array
+
+if (find(begin(arr),end(arr), i) != end(arr))
+
+########################
+Dealing with vector
+
+// CPP program to create an empty vector
+// and push values one by one.
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	// Create an empty vector
+	vector<int> vect;
+
+	vect.push_back(10);
+	vect.push_back(20);
+	vect.push_back(30);
+
+	for (int x : vect)
+		cout << x << " ";
+
+	return 0;
+}
+########################
+
+
+########################
+Iterate through vector to print the value
+
+    for(int x:vect)
+    {
+        cout<<x<<"\n";
+    }
+#######################
+
+#######################
+Sort Vector  In Ascending Order
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	vector<int> v{ 1, 5, 8, 9, 6, 7, 3, 4, 2, 0 };
+
+	sort(v.begin(), v.end());
+
+	cout << "Sorted \n";
+	for (auto x : v)
+		cout << x << " ";
+
+	return 0;
+}
+
+Sort Vector In Descending Order
+
+
+#include <bits/stdc++.h>
+using namespace std;
+
+int main()
+{
+	vector<int> v{ 1, 5, 8, 9, 6, 7, 3, 4, 2, 0 };
+
+	sort(v.begin(), v.end(), greater<int>());
+
+	cout << "Sorted \n";
+	for (auto x : v)
+		cout << x << " ";
+
+	return 0;
+}
+#########################
+
+
+#######################
+Swap functionvoid swap(int *xp, int *yp)
+{
+    int temp = *xp;
+    *xp = *yp;
+    *yp = temp;
+}
+
+#########################
